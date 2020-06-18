@@ -27,6 +27,7 @@ public static void byMyself(String name, Scanner keyboard) {
         System.out.println("Hello " + name.toUpperCase());
         System.out.println("Hello " + name);
 }
+// console.nextint()
 
 
 }

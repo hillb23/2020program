@@ -48,12 +48,13 @@ public class challengedatatype {
 
         // print a prompt and set words = to user given phrase
         System.out.println("Type a string: ");
+        one.nextLine();
         words = one.nextLine();
 
         // printing the final outcomes for the math concat
-        System.out.println(i + number);
-        System.out.printf(" \n %10.1f", (d + decimal));
-        System.out.println(s.concat(words));
+        System.out.printf(String.valueOf(i + number));
+        System.out.printf(" \n %.1f", (d + decimal));
+        System.out.printf(" \n", s.concat(words));
 
 
 
