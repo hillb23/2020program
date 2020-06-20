@@ -52,9 +52,9 @@ public class challengedatatype {
         words = one.nextLine();
 
         // printing the final outcomes for the math concat
-        System.out.printf(String.valueOf(i + number));
-        System.out.printf(" \n %.1f", (d + decimal));
-        System.out.printf(" \n", s.concat(words));
+        System.out.printf(String.valueOf (i + number));
+        System.out.printf("\n%.1f\n", (d + decimal));
+        System.out.println(s+" " + words);
 
 
 
