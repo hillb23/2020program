@@ -31,7 +31,7 @@ public class stringchallenge {
         int runTimes;
         //ask for amount of words and initialize it, let user enter using the scanner
         do { //covers the restraints on how many times it can run so that the words can be entered
-            System.out.print("How many words are you going to enter?  It must be between 2 and 10.");
+            System.out.print("How many words are you going to enter?  It must be between 2 and 10. ");
             runTimes = input.nextInt(); //prompt for words
         } while (runTimes <2 || runTimes > 10); //this is saying that no less than 2 words can be run but no more than 10 words can be run
 
@@ -48,8 +48,8 @@ public class stringchallenge {
 
 
     public static String divideWord(String inputWord) { //calling return method
-        String evenWord = " ";
-        String oddWord = " ";
+        String evenWord = "";
+        String oddWord = "";
 
         for (int even = 0; even < inputWord.length(); even += 2) { //this for loop is for calculating which letters are even and then grouping them together to form one even lettered word
             char temp = inputWord.charAt(even);
@@ -59,7 +59,7 @@ public class stringchallenge {
             char temp = inputWord.charAt(odd);
             oddWord = oddWord + temp;
         }
-        return (evenWord + " " + oddWord); //prints the even and odd letters together in words with a space between
+        return (evenWord + "  " + oddWord); //prints the even and odd letters together in words with a space between
         //example: soup su op
     }
 }
