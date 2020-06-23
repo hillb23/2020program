@@ -1,4 +1,5 @@
 //Bridget Hill
+//6-23-20
 //import java.util.Arrays/Random;
 //create random object
 //declare my int variable for the size
@@ -26,7 +27,17 @@ public class reversenumbers {
         for (int j = 0; j < size; j++) { //for loop with the size
             number[j] = randy.nextInt(100);
         }
-        int a; //create each element
+        System.out.println("Original Array \n" + Arrays.toString(number));
+        int a = randy.nextInt(number.length);
+        int b = randy.nextInt(number.length);
+        while (a==b) {
+            a = randy.nextInt(number.length);
+        }
+        int [] number2 = swap(number, a,b);
+        System.out.println("\n Swapped Array between " + (a+1)+"th # and " + (b+1) + "th # \n" + Arrays.toString(number2));
+
+
+        /*int a; //create each element
         int c;
         do {
             a = randy.nextInt(size);
@@ -34,13 +45,13 @@ public class reversenumbers {
         } while (a==c);
         System.out.println(Arrays.toString(number));
         number = reverse(number,a,c);
-        System.out.println(Arrays.toString(number));
+        System.out.println(Arrays.toString(number)); */
     }
-        public static int[] reverse (int [] num, int x, int z) {
+        public static int[] swap (int [] num, int j, int i) {
 
-        int temp = num[x];
-        num [x] = num[z];
-        num [z] = temp;
+        int temp = num[j];
+        num [j] = num[i];
+        num [i] = temp;
         return num; //return swapped array
 
 
