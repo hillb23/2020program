@@ -14,7 +14,7 @@ public static void main(String[] args) {
     String[] words = new String[n]; //declare the array to take the words
 
     for (int i = 0; i < words.length; i++) { //this is the index of the array
-        System.out.println("Please enter word with at least 4 characters: ");
+        System.out.println("Please enter word with a max of 26 characters: ");
     words[i] = input.next();
     }
     String[] newWord = new String[words.length];
